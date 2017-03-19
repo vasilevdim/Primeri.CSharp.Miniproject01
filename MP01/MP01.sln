@@ -1,0 +1,23 @@
+
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 2012
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Calculator", "Calculator\Calculator.csproj", "{BFE553D1-0669-4C16-A241-5EAAC39CB806}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "UserInput", "UserInput\UserInput.csproj", "{F98163E3-6F7D-44FC-810D-38A32B888136}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|x86 = Debug|x86
+		Release|x86 = Release|x86
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{BFE553D1-0669-4C16-A241-5EAAC39CB806}.Debug|x86.ActiveCfg = Debug|x86
+		{BFE553D1-0669-4C16-A241-5EAAC39CB806}.Debug|x86.Build.0 = Debug|x86
+		{BFE553D1-0669-4C16-A241-5EAAC39CB806}.Release|x86.ActiveCfg = Release|x86
+		{BFE553D1-0669-4C16-A241-5EAAC39CB806}.Release|x86.Build.0 = Release|x86
+		{F98163E3-6F7D-44FC-810D-38A32B888136}.Debug|x86.ActiveCfg = Debug|Any CPU
+		{F98163E3-6F7D-44FC-810D-38A32B888136}.Debug|x86.Build.0 = Debug|Any CPU
+		{F98163E3-6F7D-44FC-810D-38A32B888136}.Release|x86.ActiveCfg = Release|Any CPU
+		{F98163E3-6F7D-44FC-810D-38A32B888136}.Release|x86.Build.0 = Release|Any CPU
+	EndGlobalSection
+EndGlobal
