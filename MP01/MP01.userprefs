@@ -4,10 +4,11 @@
   <MonoDevelop.Ide.DebuggingService.Breakpoints>
     <BreakpointStore />
   </MonoDevelop.Ide.DebuggingService.Breakpoints>
-  <MonoDevelop.Ide.Workbench ActiveDocument="Calculator\Program.cs">
+  <MonoDevelop.Ide.Workbench ActiveDocument="About\MyClass.cs">
     <Files>
-      <File FileName="Calculator\Program.cs" Line="12" Column="4" />
-      <File FileName="UserInput\UserInput.cs" Line="11" Column="71" />
+      <File FileName="Calculator\Program.cs" Line="14" Column="38" />
+      <File FileName="UserInput\UserInput.cs" Line="27" Column="30" />
+      <File FileName="About\MyClass.cs" Line="1" Column="1" />
     </Files>
   </MonoDevelop.Ide.Workbench>
   <MultiItemStartupConfigurations />

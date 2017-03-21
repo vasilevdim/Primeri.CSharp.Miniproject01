@@ -3,8 +3,15 @@ namespace UserInput
 {
 	public class UInput
 	{
+		About.Me about = new About.Me();
 		public UInput()
 		{
+			
+		}
+
+		public void SayHello()
+		{
+			Console.WriteLine("Dobre doshli v " + about.shortName + "\n" + about.version + "\n");
 		}
 
 		public void getUserCommands()
