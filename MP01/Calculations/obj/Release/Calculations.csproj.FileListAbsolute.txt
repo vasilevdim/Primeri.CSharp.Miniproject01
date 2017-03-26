@@ -1,0 +1,2 @@
+C:\aula\primeri.csharp.miniproject01\MP01\Calculations\bin\Release\Calculations.dll
+C:\aula\primeri.csharp.miniproject01\MP01\Calculations\obj\Release\Calculations.dll

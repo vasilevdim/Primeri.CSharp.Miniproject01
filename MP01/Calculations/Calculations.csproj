@@ -3,10 +3,10 @@
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ProjectGuid>{F98163E3-6F7D-44FC-810D-38A32B888136}</ProjectGuid>
+    <ProjectGuid>{CE62B71D-2D70-483D-844A-3D215C8F3486}</ProjectGuid>
     <OutputType>Library</OutputType>
-    <RootNamespace>UserInput</RootNamespace>
-    <AssemblyName>UserInput</AssemblyName>
+    <RootNamespace>Calculations</RootNamespace>
+    <AssemblyName>Calculations</AssemblyName>
     <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
@@ -30,22 +30,9 @@
     <Reference Include="System" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="UserInput.cs" />
+    <Compile Include="Calculations.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-  </ItemGroup>
-  <ItemGroup>
-    <ProjectReference Include="..\About\About.csproj">
-      <Project>{456DF2E2-F317-49C3-B3E7-3111414E049D}</Project>
-      <Name>About</Name>
-    </ProjectReference>
-    <ProjectReference Include="..\Colors\Colors.csproj">
-      <Project>{BBE588F5-FFD6-4689-9468-3B35C9483701}</Project>
-      <Name>Colors</Name>
-    </ProjectReference>
-    <ProjectReference Include="..\Calculations\Calculations.csproj">
-      <Project>{CE62B71D-2D70-483D-844A-3D215C8F3486}</Project>
-      <Name>Calculations</Name>
-    </ProjectReference>
+    <Compile Include="Formula01.cs" />
   </ItemGroup>
   <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
 </Project>

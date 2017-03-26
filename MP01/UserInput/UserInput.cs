@@ -4,6 +4,10 @@ namespace UserInput
 	public class UInput
 	{
 		About.Me about = new About.Me();
+
+		Colors.ForCLI _c = new Colors.ForCLI();
+		Calculations.MainLibrary _calc = new Calculations.MainLibrary();
+
 		public UInput()
 		{
 			
@@ -11,6 +15,7 @@ namespace UserInput
 
 		public void SayHello()
 		{
+			_c.Default();
 			Console.WriteLine("Dobre doshli v " + about.shortName + "\n" + about.version + "\n");
 		}
 
@@ -23,10 +28,12 @@ namespace UserInput
 
 
 
-				Console.Write ("$ ");
-				_command = Console.ReadLine ();
+				_c.Prompt();	Console.Write ("$ ");
+				_c.Command ();_command = Console.ReadLine ();
 				//Proverka za nalichni komandi
-				if (_command.ToLower().Contains("command1")) Console.WriteLine("Startirana e komanda 1\n");
+				if (_command.ToLower().Contains("iama")) _calc.F1.calc(_command);
+
+
 				if (_command.ToLower().Contains("command2")) Console.WriteLine("Startirana e komanda 2\n");
 				if (_command.ToLower().Contains("command3")) Console.WriteLine("Startirana e komanda 3\n");
 
