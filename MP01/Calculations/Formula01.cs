@@ -2,7 +2,14 @@
 namespace Calculations
 {
 	public class Formula01
+
 	{
+		//Biblioteki
+		private Colors.ForCLI _c = new Colors.ForCLI ();
+
+
+
+
 		public Formula01 ()  //Formula za obiknovena stroitelna iama
 		{
 		}
@@ -17,6 +24,8 @@ namespace Calculations
 				{
 					//Pomosht za komandata
 
+					help();
+
 				}
 
 				if (param.Length > 1 && !_userInput.Contains("-p"))
@@ -26,11 +35,12 @@ namespace Calculations
 					double _result = 0;
 					if (runCalculations(param, out _result))
 					{
-						Console.WriteLine("Obemat na stroitelnata iama e: ");
-						Console.WriteLine(_result.ToString("N2"));
+						_c.Default();	Console.WriteLine("Obemat na stroitelnata iama e: ");
+						_c.Result();	Console.WriteLine(_result.ToString("N2"));
+						_c.Default(); Console.WriteLine("m3\n");
 					}
 					else {
-						Console.WriteLine("Ima greshno vavedeni parametri.Mojete da proverite sintaksisa s parametara '-p'");
+						_c.Default();	Console.WriteLine("Ima greshno vavedeni parametri.Mojete da proverite sintaksisa s parametara '-p'\n");
 					}
 				}
 			}
@@ -61,5 +71,26 @@ namespace Calculations
 			return false;
 		}
 		//Pomosht za komandata
+		private void help()
+		{
+
+			_c.Result(); Console.Write("[iama]");
+			_c.Default(); Console.WriteLine("-komanda za presmiatane na stroitelna iama");
+
+			_c.Command(); Console.Write("[parametri]");
+			_c.Default(); Console.WriteLine(" a1 b1 a2 b2 h\n");
+
+			_c.Command(); Console.Write("[a1 i b1]");
+			_c.Default(); Console.WriteLine(" - shirina i daljina na gornata strana na izkopa");
+
+			_c.Command(); Console.Write("[a2 i b2]");
+			_c.Default(); Console.WriteLine("- shirina i daljina na dolnata strana na izkopa");
+
+			_c.Command(); Console.Write("[h]");
+			_c.Default(); Console.WriteLine(" - visochina na izkopa\n");
+
+
+		}
+
 	}
 }
