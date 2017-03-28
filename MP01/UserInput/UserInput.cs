@@ -10,7 +10,7 @@ namespace UserInput
 
 		public UInput()
 		{
-			
+
 		}
 
 		public void SayHello()
@@ -23,29 +23,33 @@ namespace UserInput
 		{
 			string _command = "";
 
-			do {
+			do
+			{
 				//Vzemane na komanda
 
 
 
-				_c.Prompt();	Console.Write ("$ ");
-				_c.Command ();_command = Console.ReadLine ();
+				_c.Prompt(); Console.Write("$ ");
+				_c.Command(); _command = Console.ReadLine();
+
 				//Proverka za nalichni komandi
+
 				if (_command.ToLower().Contains("iama")) _calc.F1.calc(_command);
+				if (_command.ToLower().Contains("vagal")) _calc.F2.calc(_command);
 
-
-				if (_command.ToLower().Contains("command2")) Console.WriteLine("Startirana e komanda 2\n");
 				if (_command.ToLower().Contains("command3")) Console.WriteLine("Startirana e komanda 3\n");
 
 
-			}while (_command.ToLower() != "exit");
+			} while (_command.ToLower() != "exit");
 
 		}
 
 		public void justTesting()
 		{
-			Console.WriteLine ("Startirane na UserInput.UInput.justTesting()");
+			Console.WriteLine("Startirane na UserInput.UInput.justTesting()");
 		}
-
 	}
 }
+
+	
+
