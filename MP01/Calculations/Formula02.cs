@@ -3,6 +3,10 @@ namespace Calculations
 {
 	public class Formula02
 	{
+		//Formula za vdlabnat agal
+
+		Colors.ForCLI _cl = new Colors.ForCLI();
+
 		public Formula02()
 		{
 		}
@@ -25,14 +29,14 @@ namespace Calculations
 
 
 
-						Console.Write("Obemat na vdlabnatiat agal e:");
-					Console.Write(result.ToString("N2"));
-					Console.WriteLine(" m3\n ");
+						_cl.Default();	Console.Write("Obemat na vdlabnatiat agal e:");
+					_cl.Result ();     Console.Write(result.ToString("N2"));
+					_cl.Default ();     Console.WriteLine(" m3\n ");
 
 				}
 				else
 				{
-					Console.WriteLine("Ima greshno vavedeni parametri. S parametara '-p' mojete\n da vidite sintaksisa na komandata.\n");
+					_cl.Default (); Console.WriteLine("Ima greshno vavedeni parametri. S parametara '-p' mojete\n da vidite sintaksisa na komandata.\n");
 
 				}
 
@@ -69,17 +73,17 @@ namespace Calculations
 		}
 		private void help()
 		{
-			Console.Write("[vagal]");
-			Console.WriteLine("-vdlabnat agal");
+			_cl.Result();	Console.Write("[vagal]");
+			_cl.Default();	Console.WriteLine("-vdlabnat agal");
 
-			Console.Write("parametri:");
-			Console.WriteLine("a, b i h\n");
+			_cl.Command();	Console.Write("parametri:");
+			_cl.Default ();	Console.WriteLine ("a, b i h\n");
 
-			Console.Write(" a i b");
-			Console.WriteLine("shirina i daljina");
+			_cl.Command();	Console.Write(" a i b");
+			_cl.Default (); Console.WriteLine("shirina i daljina");
 
-			Console.Write(" h ");
-			Console.WriteLine("- visochina\n");
+			_cl.Command();	Console.Write(" h ");
+			_cl.Default (); Console.WriteLine("- visochina\n");
 
 
 		}
