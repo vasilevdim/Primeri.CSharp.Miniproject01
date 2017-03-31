@@ -1,6 +1,10 @@
 ﻿using System;
 namespace Calculations
 {
+	/// <summary>
+	/// class za formula za obiknovena stroitelna iama (Formula01)
+	/// </summary>
+
 	public class Formula01
 
 	{
